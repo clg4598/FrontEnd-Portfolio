@@ -1,0 +1,115 @@
+
+
+body::before {
+  --mask: linear-gradient(to bottom, transparent, black);
+  background-image: linear-gradient(250deg, hsl(209, 21%, 76%), hsl(24, 56%, 56%));
+  content: "";
+  inset: 0;
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+  position: fixed;
+  z-index: -1;
+}
+
+
+.experience {
+  width: 600px;
+  height: 100px;
+  
+  position: relative;
+  animation: mymove 8s ;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #41aab8, #e95340);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+#featuresintro {
+  background: linear-gradient(300deg, #ff7b00, #b89241, #e95340);
+  animation: gradient-animation 10s ease infinite;
+  
+}
+
+
+
+
+.education d-flex align-items-start
+{
+  display: flex;
+  flex-direction: row;
+ 
+
+
+}
+
+
+
+
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#c{
+  opacity: 70%;
+  background:#000;
+  position: bottom;
+  left: 0;
+  top: 0;
+  bottom: 70px;
+  transform: translate(20%, -20%, -20%,20%);
+}
+
+
+
+
+
+
+
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.arterlimitsbutton{
+border-radius: 25px;
+  background-color: #41aab8;
+font-size: 16px;
+
+}
+
+
+
+
